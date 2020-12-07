@@ -7,29 +7,29 @@ import static org.junit.Assert.assertThat;
 public class MaxTest {
 
     @Test
-    public void addTwo() {
-        double result = Max.add(3, 5);
+    public void maxTwo() {
+        double result = Max.max(3, 5);
         double expect = 5;
         assertThat(result, is(expect));
     }
 
     @Test
-    public void addThree() {
-        double result = Max.add(3, 5, 7);
+    public void maxThree() {
+        double result = Max.max(3, 5, 7);
         double expect = 7;
         assertThat(result, is(expect));
     }
 
     @Test
-    public void addFour() {
-        double result = Max.add(3, 5, 7, 9);
+    public void maxFour() {
+        double result = Max.max(3, 5, 7, 9);
         double expect = 9;
         assertThat(result, is(expect));
     }
 
     @Test
-    public void addFourOneMore() {
-        double result = Max.add(9, 5, 7, 3);
+    public void maxFourOneMore() {
+        double result = Max.max(9, 5, 7, 3);
         double expect = 9;
         assertThat(result, is(expect));
     }
