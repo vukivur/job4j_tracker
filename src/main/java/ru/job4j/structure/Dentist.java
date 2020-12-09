@@ -4,6 +4,13 @@ public class Dentist extends Doctor {
     private int teethCollection;
     private int countPatient;
 
+    public Dentist(int teethCollection, int countPatient, int experienceYears, int hoursWorkDay) {
+        this.teethCollection = teethCollection;
+        this.countPatient = countPatient;
+        super.setExperienceYears(experienceYears);
+        super.setHoursWorkDay(hoursWorkDay);
+    }
+
     public void healTeeth() {
 
     }
