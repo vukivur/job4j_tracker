@@ -4,6 +4,12 @@ public class Surgeon extends Doctor {
     private String workNickname;
     private int countOperation;
 
+    public Surgeon(int experienceYears, int hoursWorkDay, String workNickname, int countOperation) {
+        super(experienceYears, hoursWorkDay);
+        this.workNickname = workNickname;
+        this.countOperation = countOperation;
+    }
+
     public void operate() {
 
     }

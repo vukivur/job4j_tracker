@@ -4,6 +4,11 @@ public class Doctor extends Profession {
     private int experienceYears;
     private int hoursWorkDay;
 
+    public Doctor(int experienceYears, int hoursWorkDay) {
+        this.experienceYears = experienceYears;
+        this.hoursWorkDay = hoursWorkDay;
+    }
+
     public void callNurse() {
 
     }
