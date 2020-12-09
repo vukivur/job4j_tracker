@@ -10,5 +10,14 @@ public class StartUI {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         String currentDateFormat = item.getLocalDateTime().format(formatter);
         System.out.println("After: " + currentDateFormat);
+
+        Tracker tracker = new Tracker();
+        tracker.add(new Item(1, "First"));
+        Item[] items = tracker.findAll();
+        for (Item element : items) {
+            System.out.println(element.getName());
+        }
+        Item find = tracker.findById(1);
+        System.out.println(find.getName());
     }
 }
