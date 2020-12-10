@@ -35,6 +35,18 @@ public class Tracker {
         }
     }
 
+    public boolean delete(int id) {
+        int index = indexOf(id);
+        if (index != -1) {
+            System.arraycopy(items, id + index, items, index, this.size - index);
+            items[size - 1] = null;
+            size--;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public Item[] findByName(String key) {
         Item[] result = new Item[items.length];
         int size = 0;
