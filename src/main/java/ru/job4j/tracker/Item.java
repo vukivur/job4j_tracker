@@ -45,4 +45,13 @@ public class Item {
         Item itemTwo = new Item(5);
         Item itemThree = new Item(6, "Hello");
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", created=" + created +
+                '}';
+    }
 }

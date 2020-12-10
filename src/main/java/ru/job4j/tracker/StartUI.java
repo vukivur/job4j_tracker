@@ -19,5 +19,8 @@ public class StartUI {
         }
         Item find = tracker.findById(1);
         System.out.println(find.getName());
+
+        Item item1 = new Item(2, "Item1");
+        System.out.println("\n" + item1);
     }
 }
