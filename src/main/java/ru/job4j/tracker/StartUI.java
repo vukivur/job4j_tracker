@@ -44,8 +44,8 @@ public class StartUI {
             } else if (select == 4) {
                 System.out.println("Find item by Id.");
                 int id = Integer.valueOf(input.askInt("Enter id: "));
-                if (tracker.findById(id) != null) {
-                    Item item = tracker.findById(id);
+                Item item = tracker.findById(id);
+                if (item != null) {
                     System.out.println(item);
                 } else {
                     System.out.println("Item with id: " + id + " - not found.");
