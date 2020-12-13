@@ -35,8 +35,8 @@ public class StartUI {
             } else if (select == 3) {
                 System.out.println("Delete item.");
                 int id = Integer.valueOf(input.askInt("Enter item id: "));
-                if (tracker.findById(id) != null) {
-                    tracker.delete(id);
+                boolean result = tracker.delete(id);
+                if (result) {
                     System.out.println("Item was deleted.");
                 } else {
                     System.out.println("Element with id: " + id + " - does not exist.");
